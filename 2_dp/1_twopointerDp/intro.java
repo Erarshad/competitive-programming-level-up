@@ -1,5 +1,14 @@
 public class intro {
 
+      /*
+     * 1. Faith
+     * 2. Tree Diagram
+     * 3. Recursion
+     * 4. Recursion -> Memoization
+     * 5. Obervation
+     * 6. Memoization -> Tabulation after observation
+     * 7. Optimization
+     */
     public static void main(String[] args) {
 
         // System.out.println(fibo_dp(3,new int[4]));
