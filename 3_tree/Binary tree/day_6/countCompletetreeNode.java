@@ -39,7 +39,7 @@ class Solution {
 
         if(lh==rh){
             int ht=lh+1;
-            return (1<<ht)-1;
+            return (1<<ht)-1; //(2^ht-1)
         }else{
             return countNodes(root.left)+countNodes(root.right)+1;
         }
