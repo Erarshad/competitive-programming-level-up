@@ -14,7 +14,7 @@
  * }
  */
 
-https://leetcode.com/problems/binary-tree-coloring-game/
+//https://leetcode.com/problems/binary-tree-coloring-game/
 class Solution {
     
     int leftsubtreeSize=0;
