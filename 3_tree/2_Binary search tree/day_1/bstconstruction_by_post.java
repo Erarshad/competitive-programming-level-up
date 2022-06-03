@@ -8,8 +8,11 @@ class Solution {
     public TreeNode construct(int[] post, int min, int max){
         if(index == post.length){
             return null;
-        } else if(post[index] > min && post[index] < max){
-            TreeNode node = new TreeNode();
+        } 
+        
+        TreeNode node=null;
+        if(post[index] > min && post[index] < max){
+            node = new TreeNode();
             
             node.val = post[index];
             index--;
@@ -17,10 +20,11 @@ class Solution {
             node.right = construct(post, node.val, max);
             node.left = construct(post, min, node.val);
             
-            return node;
-        } else {
-            return null;
-        }
+            
+        } 
+
+
+        return node;
     }
     
 }

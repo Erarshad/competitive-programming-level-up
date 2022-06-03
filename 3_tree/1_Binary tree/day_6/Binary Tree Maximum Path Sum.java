@@ -23,9 +23,7 @@
 class Solution {
     int max=Integer.MIN_VALUE;
     public int maxPathSum(TreeNode root) {
-        
-        
-     
+       
         maxPathsum(root);
         return max;
         
@@ -52,11 +50,7 @@ class Solution {
         if(val>max){
             max=val;
         }
-        
-      
-        
-        
-        
+       
         return Math.max(left,right)+root.val;
         
         

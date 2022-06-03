@@ -22,9 +22,6 @@ class Solution {
     
     
     
-    
-    ;
-    
     private int sizeOfTree(TreeNode root, int x){
         
         if(root==null){

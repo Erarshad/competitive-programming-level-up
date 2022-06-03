@@ -7,8 +7,12 @@ class Solution {
     public TreeNode construct(int[] pre, int min, int max){
         if(index == pre.length){
             return null;
-        } else if(pre[index] > min && pre[index] < max){
-            TreeNode node = new TreeNode();
+        }
+
+
+        TreeNode node=null;
+        if(pre[index] > min && pre[index] < max){
+          node = new TreeNode();
             
             node.val = pre[index];
             index++;
@@ -16,10 +20,12 @@ class Solution {
             node.left = construct(pre, min, node.val);
             node.right = construct(pre, node.val, max);
             
-            return node;
-        } else {
-            return null;
+        
         }
+
+
+        return node;
+
     }
     
 }

@@ -1,6 +1,7 @@
 import java.util.*;
 
 public class countsubarraysum_hashmap {
+    // here we have to count the count the subarray that have sum of given target
 
     public static void main(String[] args) {
         int[] arr={2,-1,3,-1,1,4,-2,-3,5,3,1};

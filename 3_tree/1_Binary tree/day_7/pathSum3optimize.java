@@ -14,6 +14,8 @@
  * }
  */
 
+ // dry run for better understanding
+
 //optimized approach
 class Solution {
     
@@ -56,6 +58,7 @@ class Solution {
         if(map.get(psum) == 1){
             map.remove(psum);
         } else {
+            
             map.put(psum, map.get(psum) - 1);
         }
 
